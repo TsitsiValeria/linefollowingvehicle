@@ -1,0 +1,9 @@
+// ---- READ MPU6050 ----
+  Wire.beginTransmission(MPU);
+  Wire.write(0x3B);
+  Wire.endTransmission(false);
+  Wire.requestFrom(MPU, 6, true);
+
+  AccX = Wire.read() << 8 | Wire.read();
+  AccY = Wire.read() << 8 | Wire.read();
+  AccZ = Wire.read() << 8 | Wire.read();
