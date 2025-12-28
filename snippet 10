@@ -1,0 +1,4 @@
+if (currentTime - rotateStartTime >= 1350) { // rotate for 1.35 sec
+    stopMotors();
+    state = STATE_DONE;
+  }
