@@ -1,0 +1,10 @@
+void loop() {
+  float distance = getDistance();
+  Serial.print("Distance: ");
+  Serial.println(distance);
+
+  if (distance > STOP_DISTANCE) {
+    moveForward();     // Clear → move
+  } else {
+    stopMotors();      // Obstacle → stop
+  }
