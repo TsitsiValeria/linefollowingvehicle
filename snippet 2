@@ -1,0 +1,6 @@
+// Ultrasonic Sensor
+const int TRIG = 2;
+const int ECHO = 3;
+
+// Distance threshold (cm)
+#define STOP_DISTANCE 15  
