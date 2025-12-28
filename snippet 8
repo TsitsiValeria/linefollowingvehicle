@@ -1,0 +1,5 @@
+// ---- CALCULATE PITCH ----
+  float Ax = AccX / 16384.0;
+  float Ay = AccY / 16384.0;
+  float Az = AccZ / 16384.0;
+  float pitch = -atan2(Ax, sqrt(Ay*Ay + Az*Az)) * 180 / PI;
