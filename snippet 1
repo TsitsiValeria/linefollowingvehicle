@@ -1,0 +1,3 @@
+// Ultrasonic Sensor
+const int TRIG = 2;
+const int ECHO = 3;
