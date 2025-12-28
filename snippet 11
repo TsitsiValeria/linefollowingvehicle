@@ -1,0 +1,13 @@
+// --- LINE FOLLOWING LOGIC ---
+  if (leftOnLine && rightOnLine) {
+    moveForward();
+  }
+  else if (leftOnLine && !rightOnLine) {
+    turnRightStrong();
+  }
+  else if (!leftOnLine && rightOnLine) {
+    turnLeftStrong();
+  }
+  else {
+    searchLine();
+  }
