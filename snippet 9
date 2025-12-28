@@ -1,0 +1,7 @@
+ // Check if top of ramp (pitch ≈ 0)
+      if (abs(pitch) <= 1.0) { // 1° threshold
+        stopMotors();
+        measuredAngle = pitch; // freeze angle
+        stateStartTime = currentTime;
+        state = STATE_WAIT_TOP;
+      }
